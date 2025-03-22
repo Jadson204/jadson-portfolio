@@ -1,0 +1,20 @@
+{
+  "name": "jadson-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx concurrently \"cd backend && npm run start:dev\" \"cd frontend && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jadson204/jadson-portfolio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jadson204/jadson-portfolio"
+  },
+  "homepage": "https://github.com/Jadson204/jadson-portfolio",
+  "description": ""
+}
