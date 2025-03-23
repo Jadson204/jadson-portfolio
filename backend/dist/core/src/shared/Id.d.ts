@@ -1,3 +1,3 @@
 export default class Id {
-    static gerar(): String;
+    static gerar(): string;
 }
