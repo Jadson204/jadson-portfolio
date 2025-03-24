@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function MiniCV() {
     return (
         <div className="flex flex-1 flex-col-reverse gap-6 md:flex-row lg:flex-col-reverse xl:flex-row items-center md:items-start lg:items-center xl:items-start bg-black border border-zinc-800 rounded-2xl px-6 pt-6">
