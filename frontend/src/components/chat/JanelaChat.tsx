@@ -20,7 +20,7 @@ export default function JanelaChat() {
     }, [mensagens])
 
     return (
-        <div className="flex flex-col bg-zinc-300 rounded-2xl text-black overflow-hidden">
+        <div className="flex flex-col bg-zinc-300 rounded-2xl text-black overflow-hidden h-full">
             <div className="flex justify-between items-center bg-white p-4">
                 <h2 className="text-xl font-bold">Olá visitante!</h2>
                 <IconReload size={24} className="text-black cursor-pointer"
@@ -32,7 +32,7 @@ export default function JanelaChat() {
                     <span>Vamos conversar?</span>
                 </div>
             ) : (
-                <div className="flex flex-col p-2 gap-2 min-h-[400px] sm:min-h-[500px] max-h-[400px] sm:max-h-[500px] overflow-y-scroll">
+                <div className="flex flex-col p-2 gap-2 flex-1 overflow-y-auto">
                     {mensagens.map((mensagem, i) => {
                         const mesmoAutor = i > 0 && mensagens[i - 1].autor === mensagem.autor
                         return <BalaoMensagem key={mensagem.id} mensagem={mensagem} omitirAutor={mesmoAutor} />

@@ -14,7 +14,7 @@ export default function BotaoChat() {
                 side="top"
                 align="end"
                 sideOffset={10}
-                className="w-[400px] sm:w-[500px]"
+                className="w-[400px] sm:w-[500px] max-h-[85vh] overflow-hidden flex flex-col"
                 style={{ backgroundColor: "transparent", border: "none" }}
             >
                 <JanelaChat />
